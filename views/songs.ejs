@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Songs</title>
+</head>
+<body>
+    <h1>All Songs</h1>
+    <ul>
+        <% songs.forEach(song => { %>
+            <li><%= song.title %> by <%= song.artist %></li>
+        <% }) %>
+    </ul>
+    <a href="/songs/new">Create a New Song</a>
+</body>
+</html>
